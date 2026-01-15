@@ -1,0 +1,61 @@
+1. Declare a variable called `price` and assign it a number value.
+
+2. Declare a variable called `username` and assign it a string value.
+
+3. Create an array called `students` containing three names.
+
+4. What will `10 - "2"` return and which JavaScript type conversion rule applies?
+
+5. What is the output of `true + false` and why?
+
+6. What will be the value of `x` after: `let x = 10; x += 5;`
+
+7. What is the difference between `var`, `let`, and `const`?
+
+8. What is the result of `"5" == 5` and `"5" === 5`?
+
+9. What will be the output of `!true && false`?
+
+10. What is the result of `2 ** 3` and what does the `**` operator do?
+
+11. What will `typeof []` return?
+
+12. What is the output of `[1, 2, 3].length`?
+
+13. What value is stored in a variable that has been declared but not assigned?
+
+14. What happens when you access an array index that does not exist?
+
+15. What is the output of:
+`let a = 5; let b = 2; console.log(a / b);`
+
+16. What will the result of `"Hello" + 5` be and why?
+
+17. What will be the output of `[1, 2, 3] + [4, 5]`?
+
+18. How can you check if a variable is an array in JavaScript?
+
+19. What is the output of `typeof null` and why is it considered a JavaScript quirk?
+
+20. What will `Boolean(0)` return?
+
+21. How do you create an object with properties `name` and `age`?
+
+22. How do you access the `name` property of an object called `user` using dot notation?
+
+23. How do you access the same property using bracket notation?
+
+24. What happens if you access a property that does not exist in an object?
+
+25. What is the output of `10 + 5 * 2` and why?
+
+26. What will be logged:
+`let x = "10"; let y = 2; console.log(x * y);`
+
+27. What is the result of `false == 0` and why?
+
+28. What is the output of `true === 1`?
+
+29. What will this return: `typeof undefined`?
+
+30. What is the output of `{ } + { }` and why does it behave that way?
