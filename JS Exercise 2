@@ -1,0 +1,79 @@
+// ========================================
+// JAVASCRIPT PRACTICE QUESTIONS
+// TOPICS:
+// 1. Linear Arrays (1D)
+// 2. Linear Objects
+// 3. Multidimensional Arrays
+// 4. Multidimensional Objects
+// ========================================
+
+
+// ===============================
+// SECTION A: LINEAR ARRAYS (1D)
+// ===============================
+
+// 1. Create an array of 5 student names and display the third name.
+
+// 2. Add a new element to the end of an array.
+
+// 3. Remove the first element from an array.
+
+// 4. Write a function that returns the length of an array.
+
+// 5. Given an array of numbers, find the sum of all elements.
+
+// 6. Check if a value exists in an array.
+
+// 7. Sort an array of numbers in ascending order.
+
+// 8. Reverse an array without modifying the original array.
+
+// 9. Find the largest number in an array.
+
+
+
+// ===============================
+// SECTION B: LINEAR OBJECTS
+// ===============================
+
+// 11. Create an object representing a student with name, age, and class.
+
+// 12. Access and display the value of a property in an object.
+
+// 13. Add a new property to an existing object.
+
+// 14. Update a property value in an object.
+
+
+
+
+// 18. Check if a property exists in an object.
+
+// 19. Convert an object’s keys into an array.
+
+// 20. Count the number of properties in an object.
+
+
+// =====================================
+// SECTION C: MULTIDIMENSIONAL ARRAYS
+// =====================================
+
+// 21. Create a 2D array representing students and their scores.
+
+// 22. Access the second student’s second score.
+
+
+// 24. Calculate the total score of each student.
+
+// 25. Find the highest score in a 2D array.
+
+// 26. Add a new row to a 2D array.
+
+// 27. Remove the last row from a 2D array.
+
+
+// 29. Count the total number of elements in a 2D array.
+
+// 29. Create an object of a course, list its topics, requirements, and course outline
+
+
