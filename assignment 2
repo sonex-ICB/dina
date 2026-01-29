@@ -1,0 +1,156 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+     1.   let a = 10;
+        let b = 5;
+        document.writeln(a+b)
+        document.writeln(a-b)
+        document.writeln(a*b)
+        document.writeln(a/b)
+        document.writeln(a%b)
+
+     2.   let n = 7;
+        if (n % 2 === 0 ){
+            document.writeln("even");
+        }Else {document.writeln("odd");}
+
+     3.   let x = 10;
+        let y = 20;
+
+        document.writeln(x>y);
+        document.writeln(x <=y);
+        document.writeln(x === y);
+
+
+      4.  let age = 18;
+
+        document.writeln(age > 18);
+        document.writeln(age <= 18);
+        document.writeln(age === 18);
+
+     5.   let x1 = true;
+        let y1 = false;
+
+        document.writeln(x1 && y1); // AND
+        document.writeln(x1 || y1); // OR
+        document.writeln( !X1);     // NOT
+
+
+     6.  function greet(){document.writeln( Hello , JavaScript)}
+
+     7.  function add(a,b){return a+b;}
+
+     8.   function square (num){return num * num;}
+
+     9.   function is even(n){return n % 2 === 0;}
+
+     10.    function factorial(n) {
+    let result = 1;
+     for (let i = 1; i <= n; i++) {
+     result *= i;
+     }
+     return result;
+
+  
+     11.function max(a, b) {
+     return a > b ? a : b;
+     }
+
+// 14. Average of array
+function average(arr) {
+  let sum = 0;
+  for (let num of arr) {
+    sum += num;
+  }
+  return sum / arr.length;
+}
+// 15. Reverse string
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+// 16. Celsius to Fahrenheit
+function convertToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+// 17. Check age category
+function checkAge(age) {
+  if (age < 13) {
+    console.log("Child");
+  } else if (age <= 19) {
+    console.log("Teenager");
+  } else {
+    console.log("Adult");
+  }
+}
+// 18. Count vowels
+function countVowels(str) {
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+// 19. Calculator
+function calculate(a, b, operator) {
+  switch (operator) {
+    case "+": return a + b;
+    case "-": return a - b;
+    case "*": return a * b;
+    case "/": return a / b;
+    case "%": return a % b;
+    default: return "Invalid operator";
+  }
+}
+// 20. Divisibility check
+function isDivisible(num, divisor) {
+  return num % divisor === 0;
+}
+// 21. Sum of array using for loop
+function sumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+// 22. Check password strength
+function checkPassword(password) {
+  return password.length >= 8 ? "Strong" : "Weak";
+}
+// 23. Fahrenheit to Celsius
+function fahrenheitToCelsius(f) {
+  return (f - 32) * 5/9;
+}
+// 24. Swap values
+function swap(a, b) {
+  let temp = a;
+  a = b;
+  b = temp;
+  return [a, b];
+}
+// 25. Prime number check
+function isPrime(num) {
+  if (num <= 1) return false;
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+
+    </script>
+</body>
+</html>
