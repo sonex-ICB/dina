@@ -77,3 +77,85 @@
 // 29. Create an object of a course, list its topics, requirements, and course outline
 
 
+
+
+
+## Part A: Operators
+
+1. Declare two variables `a = 10` and `b = 5`. Use **arithmetic operators** to:
+   - Add them
+   - Subtract them
+   - Multiply them
+   - Divide them
+   - Find the remainder
+
+2. Write a program that checks if a number `n = 7` is **even or odd** using the **modulus operator**.
+
+3. Declare `x = 10` and `y = 20`. Use a **comparison operator** to:
+   - Check if `x` is greater than `y`
+   - Check if `x` is less than or equal to `y`
+   - Check if `x` is equal to `y`
+
+ 
+ 
+6. Write a program to check whether `age = 18` is:
+   - Greater than 18
+   - Less than or equal to 18
+   - Equal to 18
+
+7. Declare `x = true` and `y = false`. Use **logical operators** to:
+   - Check `x AND y`
+   - Check `x OR y`
+   - Check `NOT x`
+
+---
+
+## Part B: Functions
+
+8. Write a function `greet()` that prints `"Hello, JavaScript!"`.
+
+9. Write a function `add(a, b)` that takes two numbers and returns their sum.
+
+10. Write a function `square(num)` that returns the square of a number.
+
+11. Write a function `isEven(n)` that returns `true` if a number is even, else `false`.
+
+12. Write a function `factorial(n)` that returns the factorial of a number.
+
+13. Write a function `max(a, b)` that returns the larger of two numbers.
+
+14. Write a function `average(arr)` that returns the average of all numbers in an array.
+
+15. Write a function `reverseString(str)` that returns the reverse of a string.
+
+16. Write a function `convertToFahrenheit(celsius)` that converts Celsius to Fahrenheit.
+
+17. Write a function `checkAge(age)` that prints:
+    - `"Child"` if age < 13
+    - `"Teenager"` if age between 13 and 19
+    - `"Adult"` if age ≥ 20
+
+18. Write a function `countVowels(str)` that counts the number of vowels in a string.
+
+---
+
+## Part C: Mixed Operators & Functions
+
+19. Write a function `calculate(a, b, operator)` that takes two numbers and a string operator (`+`, `-`, `*`, `/`, `%`) and returns the result.
+
+20. Write a function `isDivisible(num, divisor)` that checks if `num` is divisible by `divisor`.
+
+21. Write a function `sumArray(arr)` that returns the sum of all elements in an array using a **for loop**.
+
+22. Write a function `checkPassword(password)` that returns:
+    - `"Strong"` if length ≥ 8
+    - `"Weak"` otherwise
+
+23. Write a function `fahrenheitToCelsius(f)` that converts Fahrenheit to Celsius.
+
+24. Write a function `swap(a, b)` that swaps the values of `a` and `b` and returns them.
+
+25. Write a function `isPrime(num)` that returns `true` if a number is prime, else `false`.
+
+
+
