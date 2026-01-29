@@ -8,6 +8,9 @@
 </head>
 
 <body>
+    <p>
+        <div></div>
+    </p>
 
 </body>
 <script>
@@ -37,7 +40,7 @@
     document.writeln( 10 / "10" ) // 
     document.writeln( 10 / "10c" ) // 
 
-    labtop = { 
+    laptop = { 
         name: "hp",
         drive: function(){ 
             document.writeln(laptop.name)
@@ -52,8 +55,50 @@
 
     }
 
+    movie.film()
+    laptop.drive()
+
+    student = {
+        name:"",
+        dob:"",
+        course:[],
+        returnyears:function(){
+            document.writeln(2026 - student.dob)
+        },
+        fulldetails:function(){
+            document.writeln("<br> My name is "+ student.name +" am "+(2026 - student.dob))
+        }
+    }
+
+    st1 = student;
+    st1.name = 'solomon';
+    st1.dob = 2000;
+    st1.course = ['PY','CPP']
+    st1.returnyears()
+    st1.fulldetails()
+    
+    st2 = student
+    st2.name = 'Sam';
+    st2.dob = 2004;
+    st2.course = ["CSS",'Script']
+    st2.returnyears()
+    st1.fulldetails()
+
+    //
+
+    
+
+document.writeln()
+console.log()
+
+// DOM  - Document Object Model 
+
+document.writeln(document)
+
+//  object HTMLDocument
 
 
+// loops/ conditions 
 </script>
 
 
