@@ -1,0 +1,132 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        students = ['Mary', 'Mark']
+        student = {
+            name: "Solomon",
+            class: 'Senior sc1'
+        }
+
+        stud2 = [
+            ['solomon', 20],
+            ['mary', 30]
+        ]
+
+        // operators - artimetic -,+./,*, ** %
+        a = 10
+        b = 15
+        document.writeln(a / b)
+        document.writeln(a ** b) // exponential
+        document.writeln(a % 9)  // modulos -  returns de remainder of a fraction
+
+
+        // comparison operartors ==, ===, >, >=, <, <=
+        document.writeln(a > 9) // true   
+        document.writeln(9 <= 9) // true   
+        document.writeln(9 == 9) // true   
+        document.writeln(9 === 9) // true   
+        document.writeln(9 === "9") // false 
+
+        // logical operators  &&= AND, || = OR, != NOT
+        document.writeln(10 > 4 && 3 > 5 && 3 < 0)
+        document.writeln(1 * 0 * 0) // 0:false
+
+        document.writeln(10 > 4 || 3 > 5 || 4 < 2)  //true
+        document.writeln(!10 > 3)  //true
+
+
+        // assignment Operator =, +=, -=, /=, *=
+        a = 4
+        /* 
+            x = 3y - 4 //assignment
+
+            2x - 4 = 10 // comparison
+            2x = 10 + 4
+            2x = 14
+            x = 14/2
+            x = 7
+            2*7 - 4 = 10
+            14- 4 = 10
+            10 = 10  // true 
+        */
+        a = 4
+        a = a //  4  
+        a = a - 2 // 2
+        a = a + 6 // 8 
+        a = a - 4 // 4
+
+        a += 3 // 7 a  = a + 3
+        a -= 1 // 6
+
+        a = a * 3
+
+        document.writeln(a)
+
+        // functions - A function a reusable block of code, 
+        // dat can called multples in a program
+        // functions are not executed except on call
+
+        function solomon() {
+            document.writeln('Welcome, am a function!')
+        }
+
+        solomon()
+        solomon()
+
+        function sum(a,b){
+            document.writeln(a + b)
+        }
+        sum(10,7)
+        sum(3,8)
+        sum(2,3)
+        sum(120,309)
+
+
+        // find area of a cycle
+        function area_of_circle(r){
+            let p = 22/7 
+            let area  = p*r**2
+            document.writeln(area)
+        }
+
+        area_of_circle(2)
+        area_of_circle(34)
+
+        // create a function dat converts N=>$
+<<<<<<< HEAD
+
+=======
+        function dina(){
+            naira = 20000
+            result = naira/1400
+            document.writeln(result)
+        }
+        
+        dina()
+
+        function cindy(){
+            dollar = 2000
+            result = dollar*1400
+            document.writeln(result) 
+        }
+        cindy()
+
+        function cart (){
+            minutes = 60
+            result = minutes/60
+            document.writeln(result)
+        }
+        cart()
+>>>>>>> b654ac476b21f33ed3bf02eacaefe6991486de2d
+    </script>
+</body>
+
+</html>
