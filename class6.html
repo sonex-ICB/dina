@@ -21,17 +21,19 @@
             <span> Address : <span id="addr"> Wuse </span> </span>
         </div>
     </div>   
+
+    <img src="" width="200px" alt="">
     
     
     <div class="container mx-auto row">
         <div class="card col-10 col-md-8 mx-auto p-0">
-            <div class="card-header">
+            <div class="card-header" id="title_date">
                 Date: 23/01/2025 - 10:00 AM 
             </div>
-            <div class="card-body">
+            <div class="card-body" id="text_body">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur est blanditiis esse.
-                 <br> <strong> By: Dina</strong>
             </div>
+            <br> <strong class="p-3"> By: <span id= "sender"></span></strong>
 
         </div>
     </div>
@@ -46,11 +48,54 @@
     document.querySelector("#demo2").innerHTML = "cindy is here"
     document.querySelector("#demo3").innerHTML = "i came home "
     
-    document.querySelector("#fullname").innerHTML = "Mary Joseph"
-    document.querySelector("#age").innerHTML = "50"
-    document.querySelector("#addr").innerHTML = "Wuse 3"
+    document.querySelector("#title_date").innerHTML = "12-01-2026"
+    document.querySelector("#text_body").innerHTML = "Hi!, Sorry i missed your call"
+    document.querySelector("#sender").innerHTML = "Dina"
 
 
+    let myimg = document.querySelector('img');
+    myimg.src = 'sefa.png'
+    myimg.alt = '300px'
+
+    //loops - countin :: FOR,
+
+    // for(count = 10; count<=15; count++){
+    //     document.writeln("<br> " + count )
+    // }
+
+    // for(d = 10; d<=15; d++){
+    //     document.writeln("<br> Welcome")
+    // }
+
+    fruits = ["Apple",'Water melon','Red','Blue']
+    for(f = 0; f<4; f++){
+        document.writeln("<br/> "+fruits[f])
+    }
+    
+    fruits.forEach(k => {
+        document.writeln("<br/> "+k)
+    });
+
+    //
+    // conditional
+
+    if(10<4){
+        document.writeln("<br> 10 is greather than 4" )
+    }else{
+        document.writeln("<br> 10 is not less than 4" )
+    }
+
+    time   = 19 // am
+    let greeting  = '';
+    if(time<12){
+        greeting = 'Good Morning';
+    }
+    else if(time >=12 && time <16){
+        greeting = 'Good Afternoon'
+    }else{
+        greeting = "Good Evening"
+    }
+
+    document.writeln(greeting)
 </script>
-
 </html>
