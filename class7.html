@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <form action="" class="mx-3 my-5 border p-3 rounded-3 shadow mx-auto" style="max-width: 280px;">
+        <input type="text" class="form-control" id="entry">
+        <div id="answer" class="my-2"></div>
+        <button type="button" class="btn btn-primary my-3" onclick="find_dob()"> Submit</button>
+    </form>
+
+    <form action="" class="mx-3 my-5 border p-3 rounded-3 shadow mx-auto" style="max-width: 280px;">
+        <input type="text" class="form-control" id="item">
+        <button type="button" class="btn btn-primary my-3" onclick="addtoList()"> Add to List</button>
+    </form>
+
+    <div class="container shadow rounded-3">
+        <ol id="mylist"></ol>
+    </div>
+</body>
+<script>
+    function find_dob(){
+        let current_year = 2025
+        let age = document.querySelector('#entry').value;
+        let result = ''
+        if(age>current_year){
+            result = "Invalid! Age cannot be greater than current year"
+        }else{
+            result = current_year - age
+        }
+        document.querySelector('#answer').innerHTML = result
+    }
+
+    function addtoList(){
+        let item = document.querySelector('#item').value
+        document.querySelector('#mylist').innerHTML = item
+    }
+    
+</script>
+</html>

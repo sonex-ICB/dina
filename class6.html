@@ -37,7 +37,6 @@
 
         </div>
     </div>
-
 </body>
 <script>
      console.log(document)
@@ -78,11 +77,25 @@
     });
 
     //
+    // conditional
 
+    if(10<4){
+        document.writeln("<br> 10 is greather than 4" )
+    }else{
+        document.writeln("<br> 10 is not less than 4" )
+    }
 
+    time   = 19 // am
+    let greeting  = '';
+    if(time<12){
+        greeting = 'Good Morning';
+    }
+    else if(time >=12 && time <16){
+        greeting = 'Good Afternoon'
+    }else{
+        greeting = "Good Evening"
+    }
 
-
-
-
+    document.writeln(greeting)
 </script>
 </html>
