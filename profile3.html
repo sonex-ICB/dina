@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-card {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .profile-header {
+            background: linear-gradient(45deg, #224abe, #17a673);
+            padding: 60px 20px 80px;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -65px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .badge-custom {
+            background-color: #f8f9fc;
+            color: #4e73df;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card profile-card shadow-lg text-center" style="width: 380px;">
+
+        <!-- Header -->
+        <div class="profile-header text-white">
+            <h4 class="fw-bold" id="fullname">Solomon </h4>
+            <p class="mb-0" id="level">SS1 Student</p>
+            <img id="pic" src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img shadow">
+        </div>
+
+        <!-- Body -->
+        <div class="card-body mt-5 pt-4">
+
+            <p class="text-muted mb-1">
+                <i class="bi bi-calendar-event"></i>
+                <span id="dob"></span>
+            </p>
+
+            <p class="text-muted mb-1">
+                <i class="bi bi-geo-alt"></i> 12 Ademola Crescent, Wuse 2, Abuja
+            </p>
+
+            <p class="text-muted mb-3">
+                <i class="bi bi-envelope"></i> solomon.johnson@email.com
+            </p>
+
+            <hr>
+
+            <!-- Hobbies -->
+            <h6 class="fw-bold mb-2">Hobbies</h6>
+            <div class="mb-3">
+                <span class="badge rounded-pill badge-custom px-3 py-2">Football</span>
+                <span class="badge rounded-pill badge-custom px-3 py-2">Reading</span>
+                <span class="badge rounded-pill badge-custom px-3 py-2">Coding</span>
+            </div>
+
+            <!-- Guardian -->
+            <h6 class="fw-bold mb-2">Guardian</h6>
+            <p class="mb-1"><i class="bi bi-person"></i> Mrs. Grace Johnson</p>
+            <p class="text-muted small">Mother • +2348098765432</p>
+
+        </div>
+    </div>
+
+
+    <script>
+
+
+        async function myfunc() {
+            let a = await fetch('file.txt')
+            let b = await a.json();
+            document.querySelector('#fullname').innerHTML = b.fullName
+            document.querySelector('#level').innerHTML = b.class + " Student"
+            document.querySelector('#dob').innerHTML = b.dateOfBirth
+            document.querySelector('#pic').src = b.pic
+        }
+        myfunc()
+
+        person = {}
+    </script>
+
+</html>

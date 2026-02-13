@@ -1,0 +1,26 @@
+
+
+    {
+  "fullName": "Samson",
+  "dateOfBirth": "15-08-2010",
+  "pic": "https://picsum.photos/500/500",
+  "age": 15,
+  "gender": "Male",
+  "address": {
+    "street": "12 Ademola Crescent",
+    "area": "Wuse 2",
+    "city": "Abuja",
+    "state": "FCT",
+    "country": "Nigeria"
+  },
+  "phoneNumber": "+2348012345678",
+  "email": "solomon.johnson@email.com",
+  "school": "Bright Future Secondary School",
+  "class": "SS3",
+  "hobbies": ["Reading", "Football", "Coding"],
+  "guardian": {
+    "name": "Mrs. Grace Johnson",
+    "relationship": "Mother",
+    "phone": "+2348098765432"
+  }
+}
