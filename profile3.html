@@ -101,16 +101,12 @@
 
 
         async function myfunc() {
-            let a = await fetch('file.txt')
-            let b = await a.json();
-            document.querySelector('#fullname').innerHTML = b.fullName
-            document.querySelector('#level').innerHTML = b.class + " Student"
-            document.querySelector('#dob').innerHTML = b.dateOfBirth
-            document.querySelector('#pic').src = b.pic
+            let a = await fetch('https://randomuser.me/api/')
+            let b = await a.jon();
+            let fullname = `${b.results[0].name.title} ${b.results[0].name.first} ${b.results[0].name. last}`
+            document.querySelector('#fullname').innerHTML = fullname;
+            document.querySelector('#level').innerHTML = b.results[0].email
+            document.querySelector('#pic').src = b.results[0].picture.large
         }
-        myfunc()
-
-        person = {}
     </script>
-
 </html>
